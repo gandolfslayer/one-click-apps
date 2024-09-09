@@ -1,0 +1,32 @@
+ar:
+  plugin_openproject_openid_connect:
+    name: "OpenProject OpenID Connect"
+    description: "يضيف مزودي استراتيجية OmniAuth OpenID Connect إلى OpenProject."
+  logout_warning: >
+    لقد تم تسجيل خروجك. قد يتم فقدان محتويات أي نموذج تقوم بإرساله. يرجى [تسجيل الدخول].
+  activemodel:
+    attributes:
+      openid_connect/provider:
+        name: الاسم
+        display_name: اسم العرض
+        identifier: المعرّف
+        secret: السر
+        scope: النطاق
+        limit_self_registration: Limit self registration
+  openid_connect:
+    menu_title: مزودو OpenID
+    providers:
+      label_add_new: إضافة مزود OpenID جديد
+      label_edit: تعديل موفر OpenID %{name}
+      no_results_table: لم يتم تعريف أى مزودين حتى الآن
+      plural: مزودو OpenID
+      singular: مزود OpenID
+    setting_instructions:
+      azure_deprecation_warning: >
+        تطبيق Azure الذي تم إعدادة يشير إلى واجهة برمجة تطبيقات غير معتمدة من Azure. يرجي انشاء تطبيق Azure جديد لضمان عمله مستقبلا.
+      azure_graph_api: >
+        استخدم نقطة النهاية graph.microsoft.com userinfo لطلب بيانات المستخدم. يجب أن يكون هذا هو الإختيار الافتراضي إلا إذا كان لديك تطبيق Azure قديم.
+      azure_tenant_html: >
+        قم بإعداد Azure Tenant الخاص بك. حيث سيتم التحكم في من بإمكانه الوصول الى نسخة OpenProject. gl. لمزيد من المعلومات يرجي الإطلاع على <a href="https://www.openproject.org/docs/system-admin-guide/authentication/openid-providers/#azure-active-directory">دليل المستخدم الخاص بنا على Azure OpenID connect</a>.
+      limit_self_registration: >
+        If enabled users can only register using this provider if the self registration setting allows for it.
